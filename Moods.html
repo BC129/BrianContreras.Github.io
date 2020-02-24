@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+
+	<title>First Quiz</title>
+
+
+</head>
+
+<body>
+<div class="answer" id="differentMoods"></div>
+
+<div>
+	<h1> How ya feelin'? </h1>
+			<button class="button" onclick="moods(0)">Joyful</button><br>
+			<button class="button2" onclick="moods(1)">Irate</button><br>
+			<button class="button" onclick="moods(2)">Anxious</button><br>
+			<button class="button2" onclick="moods(3)">Calm</button><br>
+			<button class="button" onclick="moods(4)">Confident</button><br>
+			<button class="button2" onmouseover="moods(5)">Bored?</button><br>
+</div>
+
+
+<script>
+
+function moods(moodval) {
+
+		value = moodval;
+
+		switch(value) {
+			case 0:
+				document.getElementById('differentMoods').innerHTML = "<h3>That's awesome, keep it up!</h3>";
+				document.body.style.backgroundColor = 'springgreen' ;
+				document.body.style.color = 'lemonchiffon';
+				break;
+
+			case 1:
+				document.getElementById('differentMoods').innerHTML = "<h3>Sometimes that's okay, just be careful.</h3>";
+				document.body.style.backgroundColor = 'Darkred' ;
+				document.body.style.color = 'black';
+				break;
+
+			case 2:
+				document.getElementById('differentMoods').innerHTML = "<h3>Whatever it is, it will pass.</h3>";
+				document.body.style.backgroundColor = 'Lightcyan' ;
+				document.body.style.color = 'lightsteelblue';
+				break;
+
+			case 3:
+				document.getElementById('differentMoods').innerHTML = "<h3>Just going throught the motions, huh?</h3>";
+				document.body.style.backgroundColor = 'royalBlue' ;
+				document.body.style.color = 'lightblue';
+				break;
+
+			case 4:
+				document.getElementById('differentMoods').innerHTML = "<h3>Fearless, WORK IT</h3>";
+				document.body.style.backgroundColor = 'black' ;
+				document.body.style.color = 'white';
+				break;
+
+			case 5:
+				alert("Hey, don't click that! Read a book or something.");
+				document.getElementById('differentMoods').innerHTML = "<h3></h3>";
+				document.body.style.backgroundColor = 'plum' ;
+				document.body.style.color = 'black';
+				break;
+
+
+
+		}
+	}
+</script>
+
+</body>
+
+</html>

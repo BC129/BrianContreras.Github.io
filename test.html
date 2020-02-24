@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>First Quiz</title>
+	<meta charset="utf-8">
+
+
+</head>
+
+
+<body>
+
+<h1>Mood Ring</h1>
+
+<button id="moodButton" onclick="changeMood()" value="1">change my mood</button>
+
+<div id="moodStatement"></div>
+
+	<script>
+
+text =""
+function changeMood(){
+	button = document.getElementById("moodButton")
+	if (button.value == '1') {
+		text ="SAD";
+		document.getElementById('moodStatement').innerHTML = text
+		button.value = '0';
+	}
+	else {
+		text = "HAPPY";
+		document.getElementById('moodStatement').innerHTML = text;
+		button.value = '1';
+	}
+}
+
+
+
+
+	</script>
+
+</body>
+
+</html>
